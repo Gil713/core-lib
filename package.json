@@ -1,0 +1,87 @@
+{
+  "name": "@gil713/core-lib",
+  "type": "module",
+  "repository": {
+    "url": "git@github.com:Gil713/core-lib.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env server.mjs",
+    "build": "nuxt build",
+    "build:STG": "nuxt build --dotenv ./app_env/stg.env",
+    "build:PROD": "nuxt build --dotenv ./app_env/prod.env",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "prettier --write \"{components,pages,plugins,middleware,layouts,composables,assets}/**/*.{ts,vue,html,css,scss,json,md}\"",
+    "generate:shadcn": "npx shadcn-vue@latest add --path ./components/atomics/shadcn",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@nuxt/eslint": "^0.7.2",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/device": "3.2.4",
+    "@nuxtjs/robots": "3.0.0",
+    "@nuxtjs/sitemap": "^7.2.3",
+    "@pinia/nuxt": "0.9.0",
+    "@types/woothee": "1.11.3",
+    "@vee-validate/nuxt": "^4.14.7",
+    "@vee-validate/zod": "^4.14.7",
+    "@vueuse/core": "^12.0.0",
+    "@vueuse/nuxt": "^12.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "countup.js": "2.8.0",
+    "dayjs": "^1.11.13",
+    "lodash": "^4.17.21",
+    "lucide-vue-next": "^0.462.0",
+    "motion": "^11.15.0",
+    "nuxt": "^3.14.1592",
+    "nuxt-svgo": "^4.0.9",
+    "pinia": "^2.3.0",
+    "postcss-url": "^10.1.3",
+    "qrcode.vue": "3.4.1",
+    "radix-vue": "^1.9.10",
+    "swiper": "^11.1.15",
+    "vee-validate": "^4.14.7",
+    "vue": "3.5.13",
+    "vue-3-sanitize": "^0.1.4",
+    "vue-imask": "^7.6.1",
+    "vue-router": "4.5.0",
+    "woothee": "^1.11.1",
+    "zod": "^3.23.8"
+  },
+  "volta": {
+    "node": "20.18.0",
+    "yarn": "1.22.22"
+  },
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/lodash": "^4.17.13",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "sass-embedded": "^1.82.0",
+    "shadcn-nuxt": "^0.10.4",
+    "typescript": "^5.7.2",
+    "tailwind-merge": "^2.5.5",
+    "tailwind-scrollbar": "^4.0.0-beta.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "exports": {
+    "./types": "./types"
+  }
+}
