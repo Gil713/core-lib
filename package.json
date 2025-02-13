@@ -1,12 +1,5 @@
 {
-  "name": "@gil713/core-lib",
-  "type": "module",
-  "repository": {
-    "url": "git@github.com:Gil713/core-lib.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
     "start": "node --env-file=.env server.mjs",
@@ -49,6 +42,9 @@
     "qrcode.vue": "3.4.1",
     "radix-vue": "^1.9.10",
     "swiper": "^11.1.15",
+    "tailwind-merge": "^2.5.5",
+    "tailwind-scrollbar": "^4.0.0-beta.0",
+    "tailwindcss-animate": "^1.0.7",
     "vee-validate": "^4.14.7",
     "vue": "3.5.13",
     "vue-3-sanitize": "^0.1.4",
@@ -76,12 +72,6 @@
     "prettier-plugin-tailwindcss": "^0.6.9",
     "sass-embedded": "^1.82.0",
     "shadcn-nuxt": "^0.10.4",
-    "typescript": "^5.7.2",
-    "tailwind-merge": "^2.5.5",
-    "tailwind-scrollbar": "^4.0.0-beta.0",
-    "tailwindcss-animate": "^1.0.7"
-  },
-  "exports": {
-    "./types": "./types"
+    "typescript": "^5.7.2"
   }
 }
